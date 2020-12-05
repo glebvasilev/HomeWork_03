@@ -60,12 +60,12 @@ public class Main {
         // geometric progression for N
         System.out.println(" ");
         System.out.println("geometric progression for N");
-        int n_01 = 1000; // num of elements
+        int n_01 = 1000; // exit condition
         int a_01 = 1; // start point
-        int d_01 = 1; // factor
+        int d_01 = 2; // factor
 
         int[] geo_array = new int[n_01];
-        for (int y = 1; y < n_01; y *= 2) {
+        for (int y = 1; y < n_01; y *= d_01) {
             geo_array[y] = a_01 * d_01 * y;
             System.out.print(geo_array[y] + " ");
         }
